@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setCheckedItem(R.id.prodigy);
         //NOTE:  Open fragment1 initially.
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.frames, new Prodigy());
+        ft.add(R.id.frames, new Prodigy());
         ft.commit();
     }
     @SuppressWarnings("StatementWithEmptyBody")

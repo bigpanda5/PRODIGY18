@@ -45,11 +45,11 @@ public class MyAsync extends AsyncTask<String,Void,String> {
             e.printStackTrace();
         }
         try {
-            result= response1.body().string();
-
+            result=response1.body().string();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return result;
     }
 
